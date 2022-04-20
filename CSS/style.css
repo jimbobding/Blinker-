@@ -1,0 +1,50 @@
+
+body {
+  background-color: #123524;
+}
+
+.nav-item {
+    justify-content: center;
+    font-size: 22px;
+    position: sticky;
+    text-align: center !important;
+}
+
+
+.nav li  a {  
+    padding: 15px 20px;
+    color: pink;
+}
+ 
+.nav li  a:hover {
+    color:#00A0C6; 
+}
+
+.navbar-nav > li{
+    padding-left:30px;
+    padding-right:30px;
+  }
+
+  .navbar-nav > li:hover {
+      color: burlywood;
+  }
+
+  .hero-pic {
+    background-size: cover;
+    border: 2px solid black !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-container {
+    background-color: #FFFDD0;
+    height: 50vh;
+    
+  }
+
+  .about-pic {
+    height: 50vh;
+    object-fit: cover;
+    width: 100%;
+  }
