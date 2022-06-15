@@ -30,9 +30,7 @@
 
 <body>
 
-
     <div class="container-fluid nav-container">
-
         <nav class="navbar navbar-expand-lg navbar-light ">
             <a href="#" class="navbar-brand">Blinker</a>
             <img src="media/blinker-glass.png" alt="Blinker Glass" width="30" height="24"
@@ -40,18 +38,20 @@
             <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu"
                 aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-
             </button>
             <div class="collapse navbar-collapse" id="toggleMobileMenu">
                 <ul class="navbar-nav text-center ms-auto">
                     <li>
-                        <a href="" class="nav-link">About</a>
+                        <a href="#about" class="nav-link">About</a>
                     </li>
                     <li>
-                        <a href="" class="nav-link">Opening</a>
+                        <a href="#menu" class="nav-link">Menu</a>
                     </li>
                     <li>
-                        <a href="" class="nav-link">Contact</a>
+                        <a href="#opening" class="nav-link">Opening</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav-link">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -59,12 +59,14 @@
     </div>
 
     <div class="container-fluid hero-container">
-        <div class="row">
-            <div class="col hero-col">
-                <img class="hero-pic img-responsive" src="media/blinker-circle.png" alt="">
+        <div class="row ">
+            <div class="col g-0 hero-pic ">
+                <img src="media/team-bar.jpg" class="hero-pic" alt="">
             </div>
+            <div class="centered">BLINKER</div>
         </div>
     </div>
+
     <div class="container-fluid heading-container">
         <div class="col">
             <div class="row">
@@ -72,16 +74,9 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <img class="story" src="media/blinker-story.png" alt="">
-            </div>
-        </div>
-    </div>
 
 
-    <div class="container-fluid about-container">
+    <div class="container-fluid about-container" id="about">
         <div class="row">
             <div class="col">
                 <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur cum cumque,
@@ -90,15 +85,14 @@
                     repellendus dicta?
                 </p>
             </div>
-            <div class="col" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2500">
-                <img class="about-pic" src="media/cavani.jpeg" alt="">
+            <div class="col g-0" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2500">
+                <img class="about-pic img-responsive" src="media/background-gabs.jpg" alt="">
             </div>
         </div>
         <div class="row">
             <div class="col about-col" data-aos="fade-up" data-aos-duration="2500">
-                <img class="about-pic img-responsive " src="media/cavani.jpeg" alt="">
+                <img class="about-pic img-responsive" src="media/table-drinks.jpg" alt="">
             </div>
-
             <div class="col">
                 <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur cum cumque,
                     eaque hic voluptatem
@@ -110,8 +104,29 @@
     </div>
 
 
-    </div>
-    <section class="contact-section" style="padding-top: 50px">
+    <section class="menu-section" id="menu">
+
+        <div class="container">
+            <div class="row d-flex align-items-center" data-aos="fade-up" data-aos-duration="1500">
+                <div class="col-sm-12 col-md-8 col-lg-6 mb-3 mt-3 jumbotron jumbotron-menu  text-center">
+                    <h2 class="text-center header-section">
+                        <strong>Menu</strong>
+                    </h2>
+                    <hr class="w-50 mt-4" />
+                    <p class="text-center landing-paragraph mb-lg-4 mt-lg-4">
+                        Every month different fruits and vegetables come into season.
+                        <br />The team at Blinker adapt our menu to makle sure we use seasonal british produce
+                        <br />Subscribe to
+                        a heathly life.
+                    </p>
+
+                    <a href="" type="button" class="btn btn-outline-primary btn-1 text-center">Menu</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="contact-section" style="padding-top: 50px" id="contact">
         <div class="container form-container">
             <div class="row">
                 <a href="" class="text-center contact-logo">
@@ -121,17 +136,18 @@
 
                 <form action="https://formspree.io/f/mrgrygba" method="POST" id="my-form">
                     <div class="form-group ">
-                    
+
                         <input type="text" id="name" name="name" class="contact-input" placeholder="NAME">
                     </div>
 
                     <div class="form-group ">
-                        
-                        <input type="tel" id="phone-number" name="phone-number" class="contact-input" placeholder="PHONE-NUMBER">
+
+                        <input type="tel" id="phone-number" name="phone-number" class="contact-input"
+                            placeholder="PHONE-NUMBER">
                     </div>
 
                     <div class="form-group ">
-  
+
                         <input type="email" id="email" name="email" class="contact-input" placeholder="EMAIL">
                     </div>
 
@@ -150,14 +166,14 @@
 
     <section class="address-section"></section>
 
-    <section class="opening-section">
-        <div class="container-fluid  text-center">
+    <section class="opening-section" id="opening">
+        <div class="container-fluid text-center">
             <div class="row ">
                 <div class="col ">
                     <h3 class="Opening-hours">Opening Hours</h3>
                     <table class="opening-table">
                         <tr>
-                            <th>Mon/Tue</th>
+                            <th>Mon / Tue</th>
                             <td>Closed</td>
                         </tr>
                         <tr>
@@ -186,59 +202,31 @@
                         </tr>
                     </table>
                 </div>
-                <div class="col">
-                    <img class="about-pic img-responsive " src="media/cavani.jpeg" alt="">
-                </div>
+             
             </div>
         </div>
     </section>
 
-    <section class="menu-section">
-
-        <div class="container">
-          <div
-            class="row d-flex align-items-center"
-            data-aos="fade-up"
-            data-aos-duration="1500"
-          >
-            <div
-              class="col-sm-12 col-md-8 col-lg-6 mb-3 mt-3 jumbotron jumbotron-menu  text-center"
-            >
-              <h2 class="text-center header-section">
-                <strong>Menu</strong>
-              </h2>
-              <hr class="w-50 mt-4" />
-              <p class="text-center landing-paragraph mb-lg-4 mt-lg-4">
-                Every month different fruits and vegetables come into season.
-                <br />The team at Blinker adapt our menu to makle sure we use seasonal british produce <br />Subscribe to
-                a heathly life.
-              </p>
+    <section class="footer-section">
+        <div class="text-center">
+            <p>Spring Gardens</p>
+            <p>Telephone <a href="tel:6031112298">603-111-2298</a>.</p>
+            <ul>
       
-              <a
-                href=""
-                type="button"
-                class="btn btn-outline-primary btn-1 text-center"
-                >Menu</a
-              >
-            </div>
-          </div>
-
-      </div>
-    </section>
-
-      <section class="footer-section">
-        <ul>
-            <li></li>
-            <li class="social-link"><a href="https://www.linkedin.com/in/jimmy-david-822187178/"><i
+            <li class=" social-link"><a href="https://www.linkedin.com/in/jimmy-david-822187178/"><i
                         class="fab fa-linkedin-in"></i></a>
-            </li>
-            <li class="social-link"><a href="https://www.linkedin.com/in/jimmy-david-822187178/"><i
-                        class="fab fa-brands fa-instagram"></i></a>
-            </li>
-        </ul>
+                </li>
+                <li class="social-link"><a href="https://www.linkedin.com/in/jimmy-david-822187178/"><i
+                            class="fab fa-brands fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
     </section>
-    
-
+    <section>
+        <div class="blinker text-center">
+            2022 Blinker
+        </div>
+    </section>
 </body>
 
 <script src="js/file.js"></script>
