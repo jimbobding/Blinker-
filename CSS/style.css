@@ -4,32 +4,36 @@
 body {
   margin: 0;
   padding: 0;
-
+  color:  white;
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.4rem;
   line-height: 3rem;
-
-
-
+  text-decoration-color: #005C46;
 }
 
 /* ------------------------------- navigation bar */
-
 .navbar {
   background-color: black;
+  font-size: 1.6 rem;
+  letter-spacing: 6px;
 }
 
 .nav-container {
   background-color: black;
 }
 
+.navbar-light .navbar-nav .nav-link {
+  color: white; 
+}
 
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgb(228, 26, 26);
+  }
 
 /* ------------------------------- pics */
 
 
 .hero-pic {
-
   display:block;
   background-color: rgba(76, 175, 80, 0.1);
   background-size: cover; 
@@ -39,8 +43,6 @@ body {
   width: 100vw;
   
   }
-
-
 
 .about-pic {
   height: 50vh;
@@ -58,9 +60,11 @@ body {
   }
 }
 
+/* ------------------------------- about */
 
-
-
+.about-col {
+  background-color: #005C46;
+}
 
 /* ------------------------------- headings */
 
@@ -78,13 +82,18 @@ body {
   display: block;
 }
 
+h3 {
+  padding-top: 15px;
+}
+
 /* ------------------------------- text */
 .about-text {
   text-align: center;
   margin-top: 40px;
   margin-bottom: 40px;
-
 }
+
+/* ------------------------------- contact form */
 
 .contact-logo {
   padding: 10px;
@@ -147,7 +156,7 @@ button[type="submit"]:hover {
   background-color: lightblue;
 }
 
-
+/* ------------------------------- opening hours */
 
 .Opening-hours {
   text-decoration: underline;
@@ -168,6 +177,7 @@ button[type="submit"]:hover {
   background-color: #0e5a0e;
 }
 
+/* ------------------------------- menu */
 .jumbotron-menu {
   margin-top: 0%;
   color: white;
@@ -185,7 +195,7 @@ button[type="submit"]:hover {
   background-size: cover;
 }
 
-
+/* ------------------------------- social media links */
 .social-media-list {
   list-style-type: none;
   padding-top: 1rem;
@@ -233,17 +243,9 @@ a:hover {
 }
 
 
-.about-col {
-  background: radial-gradient(
-      rgba(249, 238, 238, 0.91),
-      rgba(152, 142, 142, 0.04)
-    ),
-    url("media/background-gabs.jpg") no-repeat center center fixed;
-  background-size: cover;
-}
+
 
 .opening-section {
-  
   background: radial-gradient(
       rgba(249, 238, 238, 0.91),
       rgba(152, 142, 142, 0.04)
@@ -266,7 +268,7 @@ a:hover {
 
   width: 50%;
   outline: 3px solid;
-  outline-color: orange;
+  outline-color: green;
   outline-offset: 10px;
   transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
 }
