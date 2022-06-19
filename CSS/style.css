@@ -44,7 +44,7 @@ body {
   
   }
 
-.about-pic {
+ .about-pic {
   height: 50vh;
   border: 3px solid #123524;
   margin-left: 0;
@@ -52,12 +52,21 @@ body {
   padding-left: 0;
   min-width: 50vw;
   object-fit: cover;
+  
+ 
 }
 
-@media(min-width: 280px) {
+@media(max-width: 768px) {
   .about-pic {
     max-width: 100vw;
+    min-width: 100vw;
   }
+}
+
+
+.logo {
+  color: white;
+  
 }
 
 /* ------------------------------- about */
@@ -154,6 +163,10 @@ button[type="submit"]:hover {
 
 .contact-input {
   background-color: lightblue;
+}
+
+.btn {
+  margin: 10px;
 }
 
 /* ------------------------------- opening hours */
