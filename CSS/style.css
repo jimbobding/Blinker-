@@ -13,6 +13,9 @@ body {
   text-decoration-color: #005C46;
 }
 
+p {
+  font: 1.8rem;
+}
 
 /* ------------------------------- navigation bar */
 .navbar {
