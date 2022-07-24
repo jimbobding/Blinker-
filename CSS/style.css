@@ -193,8 +193,8 @@ button[type="submit"]:hover {
 
 .Opening-hours {
   text-decoration: underline;
-  text-decoration-color: green;
   text-decoration-thickness: 5%;
+  color: black;
 }
 
 .opening-table {
@@ -302,6 +302,13 @@ a:hover {
   background-size: cover;
   font-size: 26px;
   
+}
+
+
+@media(max-width: 414px) {
+  .centered {
+    top: 20%;
+  }
 }
 
 .centered {
