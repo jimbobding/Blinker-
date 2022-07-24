@@ -90,6 +90,12 @@ p {
 /* ------------------------------- headings */
 
 .heading-container {
+  background-color:#005C46 ;
+  text-align: center;
+  padding: 10px;
+}
+
+.walk-container {
   background-color: black;
   text-align: center;
   padding: 10px;
@@ -188,6 +194,8 @@ button[type="submit"]:hover {
 .btn {
   margin: 10px;
 }
+
+
 
 /* ------------------------------- opening hours */
 
