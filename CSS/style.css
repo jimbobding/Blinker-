@@ -200,11 +200,9 @@ button[type="submit"]:hover {
   margin: 10px;
 }
 
-
-
 /* ------------------------------- opening hours */
 
-.Opening-hours {
+.opening-hours {
   text-decoration: underline;
   text-decoration-thickness: 5%;
   color: black;
@@ -265,9 +263,7 @@ ul li{
   display: inline-block;
   padding: 20px;
   justify-content: center;
-
 }
-
 
  ul {
   margin-top: 0;
@@ -279,6 +275,12 @@ ul li{
 }
 
 .social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-link i {
   font-size: 35px;
 }
 
@@ -351,11 +353,30 @@ a:hover {
 }
 
 .opening-table  {
- 
   color: black;
 }
-
 
 .merch-header {
  margin: 10px 0px 10px 0px;
 }
+
+
+.merch-section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.merch-img:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+  margin-bottom: 20px;
+ 
+}
+.merch-img {
+  display: block; /* Make the anchor element a block-level element */
+  text-align: center; /* Center the content horizontally within the anchor */
+}
+
+
+
+
